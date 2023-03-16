@@ -1,0 +1,7 @@
+tcpim_unix.c: In function ‘discover_local_hosts’:
+tcpim_unix.c:29:36: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+   29 |         snprintf(host_ip, 16, "%s%d", base_ip, i);
+      |                                    ^
+tcpim_unix.c:29:9: note: ‘snprintf’ output between 2 and 27 bytes into a destination of size 16
+   29 |         snprintf(host_ip, 16, "%s%d", base_ip, i);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
